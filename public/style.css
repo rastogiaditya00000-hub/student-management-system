@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+.form-box,
+.table-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #334155;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #2563eb;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    background: #2563eb;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#cancelEditBtn {
+    background: #64748b;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #1e293b;
+    color: white;
+}
+
+.edit-btn {
+    background: #16a34a;
+    margin: 3px;
+}
+
+.delete-btn {
+    background: #dc2626;
+    margin: 3px;
+}
+
+@media (max-width: 650px) {
+    .form-box,
+    .table-box {
+        padding: 15px;
+    }
+
+    .table-box {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

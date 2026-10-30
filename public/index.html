@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <div class="form-box">
+
+            <h2 id="formTitle">Add New Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Student Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"
+                    required
+                >
+
+                <select id="course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="React">React</option>
+                    <option value="Node.js">Node.js</option>
+                    <option value="Full Stack Development">Full Stack Development</option>
+                </select>
+
+                <button type="submit" id="submitBtn">
+                    Add Student
+                </button>
+
+                <button type="button" id="cancelEditBtn" hidden>
+                    Cancel Edit
+                </button>
+
+            </form>
+
+            <p id="message" class="message"></p>
+
+        </div>
+
+        <div class="table-box">
+
+            <h2>Student Records</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentList">
+                    <!-- Student records appear here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
